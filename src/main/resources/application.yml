@@ -1,0 +1,25 @@
+server:
+  port: 8080
+
+spring:
+  application:
+    name:
+      ia
+
+  datasource:
+    url: jdbc:postgresql://localhost:5432/fintech_db
+    username: app_user
+    password: Password123
+  jpa:
+    properties:
+      hibernate:
+        ddl-auto: validate
+        default_schema: banking
+
+lmstudio:
+  url: http://localhost:1234
+  model: qwen3-8b
+
+logging:
+  level:
+    org.springframework.web: INFO
